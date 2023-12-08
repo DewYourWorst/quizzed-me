@@ -29,12 +29,19 @@ function App() {
     }
   ]
 
+  function displayRules(){
+    
+      for(let i = 0; i < rules.length; i++){
+      console.log(rules[i].text)}
+    
+  }
+
   return (
     <>
       <h1>My Name is Nicolas Alonzo</h1>
       <h3>This is my personal test for you</h3>
       <p>For any person playing this amazing and totally not broken quiz here are the rules. Press this button to make them ✨ appear ✨</p>
-      <button>Button</button>
+      <button onClick={displayRules}>Button</button>
           
         
     </>
